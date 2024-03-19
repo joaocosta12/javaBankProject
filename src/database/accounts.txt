@@ -1,0 +1,4 @@
+1;123;João Jonas;96385274114;Débito;2300.0;teste1;1000;teste-
+2;123;Pedro Pedroso;78945612365;Crédito;5000.0;teste2;2000;teste-
+3;123;Michele Marques;12345678912;Débito;54200.0;teste3;3000;teste-
+4;123;Gil Gomes;49064872031;Débito;2000.0;Teste@123;1000;Extrato bancário. Conta: 4, Agência: 123Saldo Inicial: 0.0 [18/21/124 18:22:40] Depositou R$2000.0 e o saldo atual é: 2000.0.-
