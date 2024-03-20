@@ -186,7 +186,7 @@ public class Main {
 					
 					int position = Integer.parseInt(accNumber) - 1;;
 				;
-					if(allUsers.get(position) != null) {
+					if(allUsers.size() > position) {
 						if(allUsers.get(position).checkAgency(agency) == true) {
 							if(allUsers.get(position).checkPassword(password) == true) {
 								currentUser = allUsers.get(position);
@@ -326,8 +326,8 @@ public class Main {
 						System.out.println("Por favor, digite a agencia que deseja transferir.");
 						String agency = sc.nextLine();
 						int positionTemp = Integer.parseInt(accNumber) - 1;;
-						
-						if(allUsers.get(positionTemp) != null) {
+												
+						if(allUsers.size() > positionTemp ) {
 							if(allUsers.get(positionTemp).checkAgency(agency) == true) {
 								System.out.println("Você gostaria de transferir para o usuário " + allUsers.get(positionTemp).getClient() + " portador do cpf " + allUsers.get(positionTemp).getCpf().substring(0,3) + ".***.***-** (sim/não)?");
 								String simNao = sc.nextLine();
@@ -399,10 +399,10 @@ public class Main {
 					}else if(loggedInMenu == '4') {
 						
 						System.out.println("4 - Alterar limite");
-						System.out.println("Qual valor você gostaria de retirar?" );
+						System.out.println("Qual seu novo valor de limite?" );
 						int newLimit = sc.nextInt();
 						String response = allUsers.get(position).changeLimit(newLimit);
-						if(response == "sucess") {
+						if(response == "success") {
 							System.out.println("Limite atualizado com sucesso" );
 						}else if(response == "hourError"){
 							System.out.println("Não é possível aumentar o limite neste horário. Por favor, tente novamente de dia." );
